@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interface Opdracht 2</title>
+    <title>Interface Opdracht 2 Login</title>
+    <link rel="shortcut icon" href="assets/img/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
@@ -12,18 +13,20 @@
         <div class="logo"><img src="assets/img/logo.png" alt="Logo" id="logo"></div>
         <h2>Sign in</h2>
         <div id="logincontainer">
-            <label for="username">Username or email adress</label>
-            <input type="text" id="username" name="username">
-            <label for="password">Password</label>
-            <input type="text" id="password" name="password">
-            <div class="linkcontainer">
-                <a href="https://www.google.nl/">Forgot password?</a>
-                <a href="https://www.google.nl/">Sign up</a>
-            </div>
-            <input type="submit" value="Sign in" id="submit">
+            <form id="login" name="login" action="#" aria-label="Login form">
+                <label for="username">Username or Email adress</label>
+                <input type="text" id="username" name="username" placeholder="Username or Email adress" tabindex="1">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password" tabindex="2">
+                <div class="linkcontainer">
+                    <a href="#">Forgot password?</a>
+                    <a href="#">Sign up</a>
+                </div>
+                <input type="submit" value="Sign in" id="submit" form="login" tabindex="3">
+            </form>
         </div>
+        <div id="errorbox"></div>
     </div>
-    <div id="language"></div>
 </body>
 <script src="assets/js/script.js"></script>
 </html>

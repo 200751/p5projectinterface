@@ -2,7 +2,8 @@
     --primary-color: rgb(16, 19, 24);
     --secondary-color: rgb(24, 29, 37);
     --primary-accent: white;
-    --submit: rgb(34, 148, 34);
+    --green-color: rgb(34, 148, 34);
+    --blue-color: rgb(18, 131, 223);
 }
 *{
     margin: 0;
@@ -61,11 +62,23 @@ a{
     text-decoration: none;
 }
 #submit{
-    background-color: var(--submit);
+    background-color: var(--green-color);
     font-size: 1rem;
     font-weight: bold;
 }
-
+#submit:hover{
+    background-color: var(--blue-color);
+}
+#errorbox{
+    margin-top: 20px;
+    background-color: rgb(204, 101, 101);
+    width: 90%;
+    height: 5vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5em;
+}
 @media only screen and (max-width: 768px) {
     #submit{
         font-weight: 100;
